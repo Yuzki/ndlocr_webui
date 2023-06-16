@@ -62,3 +62,4 @@ docker exec -i -t --user root ocr_cli_runner python app.py
     - ノートブック https://colab.research.google.com/github/nakamura196/ndl_ocr/blob/main/ndl_ocr_folder.ipynb#scrollTo=eQa1CxUBl9Ap
 - [nakamura196](https://zenn.dev/nakamura196) さんのZenn記事2 https://zenn.dev/nakamura196/articles/b6712981af3384
     - ノートブック https://colab.research.google.com/github/nakamura196/ndl_ocr/blob/main/ndl_ocr_v2.ipynb
+- 読み順付与 https://github.com/blue0620/simple_reading_order/tree/main
