@@ -25,6 +25,9 @@ RUN set -x \
     && ln -s /usr/bin/python3.8 /usr/bin/python \
     && apt -y install wget python3-distutils && wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py
 
+RUN set -x && apt -y install poppler-utils
+RUN set -x && pip install pdf2image gradio
+
 COPY . ${PROJECT_DIR}
 
 RUN set -x \
@@ -35,3 +38,5 @@ ENV PYTHONPATH $PYTHONPATH:${PROJECT_DIR}/src/text_recognition/deep-text-recogni
 RUN set -x && pip install mmcv-full==1.4.0 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8.0/index.html
 
 WORKDIR ${PROJECT_DIR}
+
+EXPOSE 7860
