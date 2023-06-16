@@ -26,7 +26,7 @@ RUN set -x \
     && apt -y install wget python3-distutils && wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py
 
 RUN set -x && apt -y install poppler-utils
-RUN set -x && pip install pdf2image gradio
+RUN set -x && pip install pdf2image gradio lightgbm
 
 COPY . ${PROJECT_DIR}
 
