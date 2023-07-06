@@ -22,8 +22,8 @@ class OcrProcess:
     
     # 入出力ファイルを格納する一時ディレクトリの作成
     def make_tmp_dir(self):
-        os.mkdir(self.tmp_dir)
-        os.mkdir(self.img_dir)
+        os.makedirs(self.tmp_dir, exist_ok=True)
+        os.makedirs(self.img_dir, exist_ok=True)
     
     # 一時ディレクトリの削除
     def remove_tmp_dir(self):
